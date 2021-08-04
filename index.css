@@ -10,7 +10,7 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 	outline: 0;
 	padding: 0;
 	margin: 0;
-	border: 0;
+	/* border: 0; */
 	}
 /* remember to define focus styles! */
 :focus {
@@ -30,10 +30,13 @@ blockquote, q {
 	quotes: "" "";
 	}
 *{
+    box-sizing: border-box;
+    /* border:5px solid grey; */
+    max-width: 100%;
     
-    border:5px solid grey;
-    font-family: 'Roboto Mono'
+
 }
+/* general styles */
 
 html{
     font-size: 62.5%;
@@ -42,7 +45,9 @@ html{
 body{
     font-size:1.6rem;
     line-height:1.5;
+    font-family: 'Roboto Mono';
     color: #4f4f4f;
+
 }
 
 section{
@@ -53,116 +58,98 @@ a{
     text-decoration:none;
 }
 
-/*  */
+
+/* ddd */
+h1 {
+    font-size: 5rem;
+    font-family: "Chelsea Market";
+}
+
+section{
+    padding:4% 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header section */
 nav{
-    padding:2% 0;
+    padding: 2% 0;
 }
 
 nav a{
     display:inline-block;
-    padding:1% 0;
-    width:10%;
+    padding: 1% 0;
+    width: 10%;
+    text-align: center;
     border-radius: 10px;
-    text-align: center;
     color: #fff;
+    text-decoration: none;
 }
 
-h1 {
-    font-size: 5rem;
-    margin-bottom: 3%;
-}
-
-h2 {
-    margin-bottom: 3%;
-}
-
-
-.orange{
-    background-color:#ff764e;
+.orange {
+    background-color:#FF764E ;
     margin-left: 10%;
-
 }
 
-.blue{
+.blue {
     background-color: #5ED3EB;
-    margin:0 24%;
+    margin: 0 24%;
 }
 
-.yellow{
+.yellow {
     background-color:#FFCD69;
-    margin-right: 10%
+    margin-right: 10%;
 }
+
+/* title section */
 .top{
-    position:relative;
-    font-family: "Chelsea Market";
-    height:;
+    position: relative;
+}
+.left, .right {
+    display: inline-block;
 }
 
-.orangetextbox {
-    background-color: #DDB9A3;
-    color: white;
-    text-align: center;
-    margin: 4%;
-}
-
-.left, .right{
-    text-align: center;
-    display:inline-block;
-}
-
-.left{
-    width:35%
+.left {
+    width: 30%;
 }
 .left img{
-    width:60%;
-    border-radius:50%
+    border-radius: 50%;
 }
 
-.right{
-    width:60%;
-    position:absolute;
-    top:30%;
-}
-.right p{
-    display: inline-block;
-    width: 42%;
+.right {
+    top: 150px;
+    position: absolute;
+    line-height: 3;
+    text-align: center;
+    margin-left: 5%;
+    width:55%
     
 }
-.fire {
-    display:block;
-    margin:0 auto;
-    margin-bottom: 5%;
-    width: 40%;
+
+.orangetextbox{
+    background-color: #DDB9A3;
+    color: white;
+    padding: 2%;
 }
-.fire img {
-   width: 20%;
-   display: block;
-   margin: 0 auto;
-}
-.fire p {
-    width: 50%;
-    margin: 0 auto;
+.firecamprv div{
+    width: 30%;
+    margin:5% auto;
 }
 
-.camprv{
-    display:block;
-    margin: 0 auto;
-    width: 40%;
+.bold {
+    font-weight: bold;
 }
-.camprv img{
-    width: 20%;
-    display: block;
-    margin: 0 auto;
-}
-.camprv p{
-    width: 50%;
-    margin: 0 auto;
-}
-.footerimg img{
+
+.footerimg {
+    background-image: url("assets/footer_img.jpg");
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
     width: 100%;
-    height: 40vh;
 }
 
 footer {
-    background-color: #F9E7DC;
+    background-color:#F9E7DC ;
+
 }
